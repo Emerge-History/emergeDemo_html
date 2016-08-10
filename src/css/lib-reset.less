@@ -1,0 +1,101 @@
+// Reset the box-sizing
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+// Reset html body
+html, body {
+  min-height: 100%;
+}
+
+html {
+  // fix tap highlight color bug in iOS.
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+// Reset margin and padding
+// TODO normalize.less reseted some of elements below
+// fieldset legend do not need reset
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  margin: 0;
+  padding: 0;
+}
+
+// Remove the dot in list
+ul, ol {
+	// if your website is text-based, you should delete this
+  list-style: none;
+}
+
+// Remove the clear button of a text input control in IE10+
+input::-ms-clear, input::-ms-reveal {
+  display: none;
+}
+
+// Forbid draging textarea
+textarea{
+  // Improve readability and alignment in all browsers
+  vertical-align: top;
+  resize: vertical;
+}
+
+// Hide the `script` element
+script {
+  display: none;
+}
+
+// font-size in chrome is not smaller than 12px, 12/14=0.8571428571
+small {
+  font-size: 85.7%;
+}
+
+// Reset the img 
+img {
+  // Corrects max-width behavior (2.) if padding and border are used
+  box-sizing: border-box; 
+  // By default, `<img>`s are `inline-block`. This assumes that, and vertically
+  // centers them. This won't apply should you reset them to `block` level.
+  vertical-align: middle;
+}
+
+input,
+button,
+select,
+textarea {
+  // Normalize includes `font: inherit;`, so `font-family`. `font-size`, etc are
+  // properly inherited. However, `line-height` isn't addressed there. Using this
+  // ensures we don't need to unnecessarily redeclare the global font stack.
+  line-height: inherit;
+}
+
+// Tables
+table {
+  // Remove most spacing between table cells.
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+
+// TODO mark ins 
+// TODO Remove outline in chrome
+
+
+// * Vertical alignment
+// * Exclude `radio` and `checkbox` elements because the default `baseline` value aligns better with text
+button,
+input:not([type="radio"]):not([type="checkbox"]),
+select {
+  vertical-align: middle;
+}
+
+// iframe 
+iframe {
+  border: 0;
+}

@@ -1,0 +1,35 @@
+// color
+@black:           #000;
+@white:           #fff;
+
+@gray-darker:     lighten(@black, 13.5%); // #222
+@gray-dark:       lighten(@black, 20%);   // #333
+@gray:            lighten(@black, 33.5%); // #555
+@gray-light:      lighten(@black, 60%);   // #999
+@gray-lighter:    lighten(@black, 93.5%); // #eee
+
+@global-primary:	    #0e90d2; // #157EFB; //#428bca;
+@global-secondary:    lighten(@global-primary, 15%);
+@global-success:	    #5eb95e; // #53D76A; //#5cb85c;
+@global-warning:	    #F37B1D; // #FD9426; // #f0ad4e;
+@global-danger:		    #dd514c; // #FC3159; //#da314b;
+@global-info:         @global-secondary;
+
+@body-background: #fff;
+
+// font
+@font-rem: 20px;
+@font-family: lato,"Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+@code-family: Consolas,Menlo,Courier,monospace;
+@font-size: 14px;
+@line-height: 1.5;
+@font-color: #666;
+
+
+// links
+@link-color: @global-primary;
+@link-hover-color: darken(@link-color, 15%);
+
+// h1 - h6 element
+@base-heading-font-weight: 600;
+@base-heading-margin-top: 2em;
