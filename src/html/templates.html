@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>emergeDemo-模板页</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style-templates.css" />
+</head>
+<body>
+	<header class="header">
+		<div class="header__logo">
+            <a href="#">emergeDemo</a>      
+        </div>
+        <ul class="header__menue">
+            <li><a href="">保存</a></li>
+            <li><a href="">预览</a></li>
+            <li><a class="header__menue-publish" href="">发布</a></li>
+        </ul>
+	</header>
+    <aside class="aside">
+        <div class="aside__inner">
+            <div class="siderbar">
+                <ul class="siderbar__nav">
+                    <li class="siderbar__nav-heading">箭头</li>
+                    <li class="nav-item">
+                        <a class="nav-item__heading" href="#"><i class="iconfont icon-meeting"></i><span>会议</span></a>
+                        <ul class="nav-item__content">
+                            <li>实例A</li>
+                            <li>实例B</li>
+                            <li>style one</li>
+                            <li>style two</li>
+                            <li>style three</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item__heading" href="#"><i class="iconfont icon-office"></i><span>联合办公</span></a>
+                        <ul class="nav-item__content">
+                            <li>会议2q</li>
+                            <li>会议2w</li>
+                            <li>会议2e</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item__heading" href="#"><i class="iconfont icon-office"></i><span>购物中心</span></a>
+                        <ul class="nav-item__content">
+                            <li>会议2q</li>
+                            <li>会议2w</li>
+                            <li>会议2e</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item__heading" href="#"><i class="iconfont icon-history"></i><span>我的案例</span></a>
+                        <ul class="nav-item__content">
+                            <li>会议2q</li>
+                            <li>会议2w</li>
+                            <li>会议2e</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>  
+        </div>
+    </aside>
+	<script src="../js/vendor/jquery.min.js"></script>
+    <script>
+        jQuery.fold = function(obj,obj_c,speed,Event){
+            $(obj).bind(Event,function(){
+                if($(this).next().is(":visible")){
+                    $(this).next().slideUp(speed).end().parent().removeClass("nav-item--active");
+                }
+                else{
+                    $(obj_c).slideUp(speed);
+                    $(obj).parent().removeClass("nav-item--active");
+                    $(this).next().slideDown(speed).end().parent().addClass("nav-item--active");
+                }
+            });
+        }
+
+        $(function(){
+            $.fold(".nav-item__heading",".nav-item__content","fast","click"); // 参数：相应区,隐藏显示的内容,速度,事件
+        });
+
+    </script>
+
+
+</body>
+</html>

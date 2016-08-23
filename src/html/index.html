@@ -2,40 +2,197 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <title>emergeDemo-index</title>
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="apple-mobile-web-app-capable" content="no" />
     <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../css/style-common.css" />
     <link rel="stylesheet" type="text/css" href="../css/style-index.css" />
 </head>
 <body>
-	<header class="header">
-		<div class="logo">
-			<a href="/"></a>
-		</div>
-		<div class="free">
-			免费体验Edge
-		</div>
-		<div class="login">
-			登录
-		</div>
-	</header>
-	<section>
-		<p>使用EDGE智能场景Wi-Fi</p>
-		<p>优化您在会议、办公、购物等场所的网络体验，感受全新互联网带来的便捷。</p>
-		<div class="content">
-			<div class="box">
-				<div class="avator-icon"></div>
-				<h2 class="title">
-					大型会议
-				</h2>
-				<p class="introduce">
-					会议场景Wi-Fi,为您 提供日程、图文直播等网络体验。
-				</p>
-			</div>
-		</div>
+	<section class="wrap" data-speed="3">
+        <header class="header">
+            <div class="w">
+                <a class="header__logo" href="/"></a>
+                <a class="header__login" href="javascript:;">登录</a>
+            </div>
+        </header>
+        <div class="content">
+            <p class="content__tt">使用Emerge提供的智能场景无线网络，No 扫一扫，No 公众号，No App，全新的浸入式网络服务，<br>优化您在会议、办公、购物等场所的网络体验，感受全新互联网带来的便捷。</p>
+            <a href="/test" class="content__taste">免费体验Edge</a>
+        </div>
 	</section>
+    <section>
+        <div class="w">
+            <ul class="feture">
+                <li>
+                    <span class="feture__line"><i class="iconfont icon-meeting"></i></span>
+                    <h1 class="feture__tt">大型会议</h1>
+                    <p class="feture__intro">提供快捷的会议信息搜索服务，<br>将会议的日程信息、嘉宾信息、<br>图文直播等本地信息和服务<br>集成入会议场景网络的搜索引擎中。</p>
+                    <a class="feture__taste feture__taste--active" href="#">马上体验</a>
+                </li>
+                <li>
+                    <span class="feture__line"><i class="iconfont icon-office"></i></span>
+                    <h1 class="feture__tt">联合办公</h1>
+                    <p class="feture__intro">提供智能的联合办公服务，<br>将智能门禁、打印服务、访客系统等<br>集成入办公空间的<br>本地场景网络首页中。</p>
+                    <a class="feture__taste" href="#">马上体验</a>
+                </li>
+                <li>
+                    <span class="feture__line"><i class="iconfont icon-shopping-copy"></i></span>
+                    <h1 class="feture__tt">购物中心</h1>
+                    <p class="feture__intro">提供贴心的导购和促销服务，<br>将门店位置、商品信息、活动打折等<br>信息融入用户日常使用的<br>搜索引擎和社交媒体中。</p>
+                    <a class="feture__taste" href="#">马上体验</a>
+                </li>
+                <span class="justify-fixed"></span>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="w">
+            <p class="footer__tt">© 2012 - 2016 Emerge. All Rights Reserved</p>
+        </div>
+    </footer>
+    <div class="sign">
+        <div class="sign__layer">
+            <div class="sign__box">
+                <div class="sign__container">
+                    <div class="sign__left">
+                        <h1>已有账户？</h1>
+                        <p>马上登录吧，体验edge智能网络<br>带来的全新体验。</p>
+                        <a class="J_login" href="javascript:;">登录</a>
+                    </div>
+                    <div class="sign__right">
+                        <h1>没有账户？</h1>
+                        <p>注册edge账户，体验全新互联网的便捷，<br>并且为您实时保存案例。</p>
+                        <a class="J_register" href="javascript:;">注册</a>
+                    </div>
+                    <div class="sign__move">
+                        <div class="move__login">
+                            <h1>LOGIN</h1>
+                            <div class="login__form">
+                                <div class="group">      
+                                  <input type="text" required>
+                                  <span class="highlight"></span>
+                                  <span class="bar"></span>
+                                  <label>用户名/邮箱</label>
+                                </div>
+                                  
+                                <div class="group">      
+                                  <input type="text" required>
+                                  <span class="highlight"></span>
+                                  <span class="bar"></span>
+                                  <label>密码</label>
+                                </div>
+                                <a href="#" class="login__form-forget">忘记密码？</a>
+                            </div>
+                            <p><a class="move__login-btn" href="javascript:;">登录</a><span class="move__login-and">或者</span><a class="move__login-icon"><i class="iconfont icon-wechat"></i></a><a class="move__login-icon"><i class="iconfont icon-weibo"></i></a><a class="move__login-icon"><i class="iconfont icon-user"></i></a></p>
+                        </div>
+                        <div class="move__register">
+                            <h1>REGISTER</h1>
+                            <div class="register__form">
+                                <div class="group">      
+                                  <input type="text" required>
+                                  <span class="highlight"></span>
+                                  <span class="bar"></span>
+                                  <label>用户名</label>
+                                </div>
+                                <div class="group">      
+                                  <input type="text" required>
+                                  <span class="highlight"></span>
+                                  <span class="bar"></span>
+                                  <label>邮箱</label>
+                                </div>
+                                <div class="group">      
+                                  <input type="text" required>
+                                  <span class="highlight"></span>
+                                  <span class="bar"></span>
+                                  <label>密码</label>
+                                </div>
+                                <div class="group">      
+                                  <input type="text" required>
+                                  <span class="highlight"></span>
+                                  <span class="bar"></span>
+                                  <label>验证码</label>
+                                </div>
+                            </div>
+                            <p><a class="move__login-btn" href="javascript:;">注册</a><span class="move__login-and">或者</span><a class="move__login-icon"><i class="iconfont icon-wechat"></i></a><a class="move__login-icon"><i class="iconfont icon-weibo"></i></a><a class="move__login-icon"><i class="iconfont icon-user"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var lastScrollY = 0,
+            ticking = false;
+            function onScroll(){
+                lastScrollY = window.scrollY;
+                requestTick();
+            }
+            function requestTick(){
+                if(!ticking) {
+                    requestAnimationFrame(update);
+                    ticking = true;
+                }
+            }
+            var $ele = $('.wrap');
+            var $window = $(window);
+            function update(){
+                var yPos = -($window.scrollTop() / $ele.data('speed'));
+                var coords = '50% ' + yPos + 'px';
+                $ele.css({backgroundPosition: coords});
+                ticking = false;
+            }
+            window.addEventListener('scroll', onScroll, false);
+            window.requestAnimFrame = (function(){
+                return window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.oRequestAnimationFrame ||
+                window.msRequestAnimationFrame ||
+                function (callback){
+                    window.setTimeout(callback, 1000 / 60);
+                }
+            })();
+            $('.feture__taste').hover(function(){
+                $(this).siblings('.feture__line').addClass('feture__line--active');
+            }, function(){
+                $(this).siblings('.feture__line').removeClass('feture__line--active');
+            });
+
+            $(window).click(function(e){
+                console.log(e.target)
+                if($(e.target).hasClass('header__login')){
+
+                } else {
+                    if($(e.target.offsetParent).parents('.sign__layer').size() == 0){
+                        // close
+                        $('.sign').fadeOut();
+                    }  
+                }
+            });
+
+            $('.header__login').click(function(){
+                $('.sign').fadeIn();
+            })
+            $('.J_register').click(function(){
+                $('.move__login').fadeOut('fast', function(){
+                    $('.move__register').fadeIn();
+                });
+                $('.sign__move').animate({left:"444px"}).animate({left:"414px"});
+            });
+            $('.J_login').click(function(){
+                $('.move__register').fadeOut('fast', function(){
+                    $('.move__login').fadeIn();
+                });
+               
+                $('.sign__move').animate({left:"0px"}).animate({left:"30px"});
+            });
+        });
+    </script>
 </body>
 </html>
